@@ -6,7 +6,6 @@ export const pool = config.databaseUrl
   ? new Pool({
       connectionString: config.databaseUrl,
       max: 5,
-      ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : undefined,
     })
   : null;
 
