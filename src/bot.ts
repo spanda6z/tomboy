@@ -14,9 +14,9 @@ const menu = () => new InlineKeyboard()
 const admin = (ctx: any) => !config.adminChatId || Number(ctx.chat?.id) === config.adminChatId;
 
 const packages = [
-  { id: "starter", name: "STARTER", budget: 1, duration: "1H", wallets: 5, icon: "🟢" },
-  { id: "growth", name: "GROWTH", budget: 2, duration: "3H", wallets: 15, icon: "🔵" },
-  { id: "pro", name: "PRO", budget: 5, duration: "6H", wallets: 30, icon: "🟣" },
+  { id: "starter", name: "STARTER", budget: 1, duration: "6H", wallets: 5, icon: "🟢" },
+  { id: "growth", name: "GROWTH", budget: 2, duration: "12H", wallets: 15, icon: "🔵" },
+  { id: "pro", name: "PRO", budget: 5, duration: "24H", wallets: 30, icon: "🟣" },
 ];
 
 export function createBot() {
