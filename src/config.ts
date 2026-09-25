@@ -9,7 +9,7 @@ const required = (key: string) => {
 
 export const config = {
   botToken: required("BOT_TOKEN"),
-  databaseUrl: required("DATABASE_URL"),
+  databaseUrl: process.env.DATABASE_URL || "",
   rpcUrl: process.env.SOLANA_RPC_URL || "https://api.mainnet-beta.solana.com",
   tomMint: new PublicKey(process.env.TOM_MINT || "8GPzPsLp4ZFveMKjVrPA7giEBEcAY5Yo2X3QysvJQgTE"),
   treasury: new PublicKey(process.env.TREASURY_ADDRESS || "DmqV7Utif7TEruBkd4AuLrzp2Zw2VpoaPP1tgjjoxcqf"),
